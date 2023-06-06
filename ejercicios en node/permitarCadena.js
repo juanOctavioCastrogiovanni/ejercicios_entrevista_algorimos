@@ -18,15 +18,7 @@ function permutarCadena(cadena){
         let cadenaAuxiliar;
         let caracter = cadena[i];
 
-// bc
-// c
-// b
-// ac
-// c
-// a
-// ab
-// b
-// a
+
         cadenaAuxiliar =  cadena.substring(0, i) + cadena.substring(i+1, cadena.length)        
         // cadenaAuxiliar =  cadena.slice(0, i) + cadena.slice(i+1)        
 
@@ -44,7 +36,7 @@ function permutarCadena(cadena){
 
 }
 
-console.log(permutarCadena1("abcd"));
+console.log(permutarCadena("abcd"));
 
 
 
