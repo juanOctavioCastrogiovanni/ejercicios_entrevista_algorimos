@@ -10,6 +10,7 @@ import static java.util.Arrays.asList;
 
 public class Main {
     public static void main(String[] args) {
+        List<Double> saldos = new ArrayList<>();
 
 
         Scanner scanner = new Scanner(System.in);
@@ -41,7 +42,7 @@ public class Main {
             System.out.println(cuenta);
         }
 
-        // santander.getCuentasBancarias().stream().forEach(cuentaBancaria -> System.out.println(cuentaBancaria));
+         santander.getCuentasBancarias().stream().forEach(cuentaBancaria -> saldos.add(cuentaBancaria.getSaldo()));
 
         //for (int i=0; i<santander.getCuentasBancarias().size(); i++){
           //  System.out.println(santander.getCuentasBancarias().get(i));
